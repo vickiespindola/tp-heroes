@@ -1,10 +1,10 @@
-const server = require('express');
+const express = require('express');
 const path = require('path');
-const app = server();
+const app = express();
 
 const port = 3030;
 
-app.use(server.static('public'))
+app.use(express.static('public'))
 
 app.listen(port, () => console.log('Servidor ejecutándose en puerto '+ port));
 
